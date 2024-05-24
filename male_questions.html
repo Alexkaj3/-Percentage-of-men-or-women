@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الأسئلة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>مرحبًا، <span id="namePlaceholder"></span></h2>
+        <div id="questions">
+            <div class="question">
+                <p>سؤال 1: هل تفضل الرياضة القوية؟</p>
+                <button class="true" onclick="answerQuestion(this)">نعم </button>
+                <button class="false" onclick="answerQuestion(this)">لا </button>
+                <button class="neutral" onclick="answerQuestion(this)">ربما </button>
+            </div>
+            <div class="question" style="display: none;">
+                <p>سؤال 2: هل تحب الطعام خار؟</p>
+                <button class="true" onclick="answerQuestion(this)">نعم </button>
+                <button class="false" onclick="answerQuestion(this)">لا </button>
+                <button class="neutral" onclick="answerQuestion(this)">ربما </button>
+            </div>
+            <div class="question" style="display: none;">
+                <p>سؤال 3: هل تستمتع بمشاهدة الرياضة على التلفاز؟</p>
+                <button class="true" onclick="answerQuestion(this)">نعم </button>
+                <button class="false" onclick="answerQuestion(this)">لا </button>
+                <button class="neutral" onclick="answerQuestion(this)">ربما</button>
+            </div>
+            <div class="question" style="display: none;">
+                <p>سؤال 4: هل تهتم بالعناية بمظهرك الخارجي؟</p>
+                <button class="true" onclick="answerQuestion(this)">نعم </button>
+                <button class="false" onclick="answerQuestion(this)">لا </button>
+                <button class="neutral" onclick="answerQuestion(this)">ربما </button>
+            </div>
+            <div class="question" style="display: none;">
+                <p>سؤال 5: هل تحب السفر واستكشاف أماكن جديدة؟</p>
+                <button class="true" onclick="answerQuestion(this)">نعم </button>
+                <button class="false" onclick="answerQuestion(this)">لا </button>
+                <button class="neutral" onclick="answerQuestion(this)">ربما </button>
+            </div>
+            <div class="question" style="display: none;">
+                <p>سؤال 6: هل تستمتع بممارسة الأنشطة البدنية في وقت فراغك؟</p>
+                <button class="true" onclick="answerQuestion(this)">نعم </button>
+                <button class="false" onclick="answerQuestion(this)">لا </button>
+                <button class="neutral" onclick="answerQuestion(this)">ربما </button>
+            </div>
+            <div class="question" style="display: none;">
+                <p>سؤال 7: هل تهتم بالتقنية والابتكار؟</p>
+                <button class="true" onclick="answerQuestion(this)">نعم </button>
+                <button class="false" onclick="answerQuestion(this)">لا </button>
+                <button class="neutral" onclick="answerQuestion(this)">ربما </button>
+            </div>
+            <div class="question" style="display: none;">
+                <p>سؤال 8: هل تفضل الأفلام الحركة؟</p>
+                <button class="true" onclick="answerQuestion(this)">نعم </button>
+                <button class="false" onclick="answerQuestion(this)">لا </button>
+                <button class="neutral" onclick="answerQuestion(this)">ربما </button>
+            </div>
+            <div class="question" style="display: none;">
+                <p>سؤال 9: هل تفضل القراءة كهواية في أوقات الفراغ؟</p>
+                <button class="true" onclick="answerQuestion(this)">نعم </button>
+                <button class="false" onclick="answerQuestion(this)">لا </button>
+                <button class="neutral" onclick="answerQuestion(this)">ربما </button>
+            </div>
+            <div class="question" style="display: none;">
+                <p>سؤال 10: هل تستمتع بتناول القهوة أو الشاي في الصباح؟</p>
+                
+                <button class="true" onclick="answerQuestion(this)">نعم </button>
+                <button class="false" onclick="answerQuestion(this)">لا </button>
+                <button class="neutral" onclick="answerQuestion(this)">ربما </button>
+                
+            </div>
+        </div>
+        <button id="submitButton" onclick="calculatePercentage()">تقديم الإجابات</button>
+        <div id="result" style="display: none;"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

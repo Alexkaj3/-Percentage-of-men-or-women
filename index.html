@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الدخول</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>مرحبًا، يرجى إدخال اسمك ونوع جنسك:</h2>
+        <div class="input-container">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" placeholder="الاسم">
+        </div>
+        <div class="input-container">
+            <label for="gender">نوع الجنس:</label>
+            <select id="gender">
+                <option value="">اختر</option>
+                <option value="male">ذكر</option>
+                <option value="female">أنثى</option>
+            </select>
+        </div>
+        <button class="login-button" onclick="validateInputs()">دخول</button>
+        <p id="errorMessage" style="display: none; color: red;">يرجى كتابة الاسم وتحديد نوع الجنس</p>
+            <p style="margin: 10px">&copy; By Development - Yassin</p>
+    </div>
+    
+  
+    <script src="script.js"></script>
+</body>
+</html>
